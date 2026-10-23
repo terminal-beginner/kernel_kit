@@ -1,0 +1,34 @@
+# build.config for OnePlus 12R (aston)
+# AVB properties extracted from the running device using avbtool info_image
+
+BOOT_AVBTOOL_PROPS=" \
+com.android.build.boot.os_version:13 \
+com.android.build.boot.fingerprint:qti/kalama/kalama:13/TP1A.220905.001/1788506988030:user/release-keys \
+com.android.build.boot.security_patch:2026-09-01 \
+com.android.build.boot.security_patch:2026-09-01 \
+"
+
+VENDOR_BOOT_AVBTOOL_PROPS="com.android.build.vendor_boot.fingerprint:qti/kalama/kalama:13/TP1A.220905.001/1788506988030:user/release-keys"
+
+AVB_SIGN_VENDOR_BOOT_ROLLBACK_INDEX=1
+
+VENDOR_DLKM_AVBTOOL_PROPS=" \
+com.android.build.vendor_dlkm.os_version:13 \
+com.android.build.vendor_dlkm.fingerprint:qti/kalama/kalama:13/TP1A.220905.001/1788506988030:user/release-keys \
+"
+
+VENDOR_DLKM_FS_TYPE="ext4"
+
+SYSTEM_DLKM_AVBTOOL_PROPS=" \
+com.android.build.system_dlkm.os_version:13 \
+com.android.build.system_dlkm.fingerprint:qti/kalama/kalama:13/TP1A.220905.001/1788506988030:user/release-keys \
+"
+
+SYSTEM_DLKM_FS_TYPE="ext4"
+
+# FEC num roots for DLKM partitions
+SYSTEM_DLKM_FEC_NUM_ROOTS="2"
+VENDOR_DLKM_FEC_NUM_ROOTS="2"
+
+# Do not generate FEC by default
+AVBTOOL_GENERATES_FEC_BY_DEFAULT=0
