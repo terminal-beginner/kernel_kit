@@ -199,7 +199,6 @@ oplus_mdmrst.ko
 oplus_mm_kevent.ko
 oplus_mm_kevent_fb.ko
 oplus_network_linkpower_module.ko
-oplus_networks_tuning.ko
 oplus_nfc.ko
 oplus_patch.ko
 oplus_qr_scan.ko

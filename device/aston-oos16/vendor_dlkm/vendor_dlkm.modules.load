@@ -276,7 +276,6 @@ oplus_app_monitor.ko
 oplus_network_linkpower_module.ko
 oplus_score.ko
 oplus_qr_scan.ko
-oplus_networks_tuning.ko
 oplus_dns_hook.ko
 oplus_game_first.ko
 oplus_vnet.ko
